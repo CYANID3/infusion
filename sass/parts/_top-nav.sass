@@ -15,6 +15,7 @@ nav
 	height: 725px
 	box-sizing: border-box
 	background: url(../img/Layer_12.png)
+	background-size: cover
 
 
 .nav-list
@@ -26,16 +27,16 @@ nav
 	display: flex
 
 .nav-item a
-	padding: 0 1.5rem
+	padding: 1vw
 	text-decoration: none
 	color: #586165
-	font-size: 14px
+	font-size: 0.8vw
 
 .nav-logo a
 	padding-right: 50px
 	text-decoration: none
 	color: black
-	font-size: 22px
+	font-size: 1.5vw
 
 .nav-item a:hover
 	color: #63c6ae
@@ -54,7 +55,7 @@ nav
 	color: white
 	margin: 0 auto
 	margin-bottom: 6px
-	margin-top: 240px
+	margin-top: 200px
 	background: 60px 100px #63c6ae
 	pointer-events: none
 
@@ -95,7 +96,26 @@ nav
 
 @media screen and (max-width: 980px)
 	.container
-		width: 90%
+		width: 80%
+	nav
+		background-color: #63c6ae
+		text-align: center
+		height: 70px
+	.nav-item a
+		display: none
+	.nav-logo 
+		margin: 0 auto
+	.nav-logo a
+		padding: 0
+		font-size: 40px
+		text-align: center
+		color: white
+
+	.nav-list
+		padding: 10px
+		vertical-align: middle
+		align-items: center
+		text-align: center
 	.maintitle
 		width: 90%
 		border-top-right-radius: 10px
@@ -105,21 +125,6 @@ nav
 		border-bottom-right-radius: 10px
 		border-bottom-left-radius: 10px
 
-// @media screen and (max-width: 720px)
-// 	.container
-// 		width: 90%
-// 	.maintitle
-// 		width: 90%
-// 	.subtitle
-// 		width: 90%
-
-// @media screen and (max-width: 640px)
-// 	.container
-// 		width: 100%
-// 	.maintitle
-// 		width: 100%
-// 	.subtitle
-// 		width: 100%
 
 
 

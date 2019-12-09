@@ -4624,24 +4624,93 @@ html, body {
   height: 100%;
 }
 
+.skill-container {
+  background-color: #f9f9f9;
+}
+
 .skillbox {
-  font-family: HelveticaNeue;
+  font-family: Helvetica;
+  color: #737c85;
   margin: 0 auto;
   display: flex;
 }
 
-.skill-item {
-  padding: 0;
-  margin: 0 10px;
-  border: 1px solid grey;
+.button {
+  margin-top: 30px;
+  display: flex;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
 }
 
-img {
-  width: 100%;
-  height: 100px;
+.one a {
+  border: 2px solid white;
+  padding: 13px 30px;
+  margin: 1px;
+  margin-top: 2px;
+  text-decoration: none;
+  color: white;
+  background: 30px 60px rgba(99, 198, 174, 0.9);
 }
 
+.two a {
+  margin-top: 70px;
+  padding: 13px 30px;
+  border: 2px solid white;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+  background: 30px 60px rgba(69, 83, 87, 0.2);
+}
+
+.skill-title {
+  font-size: 21px;
+}
+
+.skill-subtitle {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.skill-item {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    width: 100%;
+  }
+
+  .skill-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .button {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .button {
+    display: inline-block;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .one {
+    margin-bottom: 40px;
+  }
+
+  .two a {
+    margin: 0;
+  }
+
+  a {
+    border-radius: 10px;
+  }
+}
 .container {
   width: 80%;
   margin-top: 0;
@@ -4661,6 +4730,7 @@ nav {
   height: 725px;
   box-sizing: border-box;
   background: url(../img/Layer_12.png);
+  background-size: cover;
 }
 
 .nav-list {
@@ -4673,17 +4743,17 @@ nav {
 }
 
 .nav-item a {
-  padding: 0 1.5rem;
+  padding: 1vw;
   text-decoration: none;
   color: #586165;
-  font-size: 14px;
+  font-size: 0.8vw;
 }
 
 .nav-logo a {
   padding-right: 50px;
   text-decoration: none;
   color: black;
-  font-size: 22px;
+  font-size: 1.5vw;
 }
 
 .nav-item a:hover {
@@ -4703,7 +4773,7 @@ nav {
   color: white;
   margin: 0 auto;
   margin-bottom: 6px;
-  margin-top: 240px;
+  margin-top: 200px;
   background: 60px 100px #63c6ae;
   pointer-events: none;
 }
@@ -4750,7 +4820,35 @@ nav {
 }
 @media screen and (max-width: 980px) {
   .container {
-    width: 90%;
+    width: 80%;
+  }
+
+  nav {
+    background-color: #63c6ae;
+    text-align: center;
+    height: 70px;
+  }
+
+  .nav-item a {
+    display: none;
+  }
+
+  .nav-logo {
+    margin: 0 auto;
+  }
+
+  .nav-logo a {
+    padding: 0;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+  }
+
+  .nav-list {
+    padding: 10px;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
   }
 
   .maintitle {
@@ -4763,6 +4861,86 @@ nav {
     width: 90%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+  }
+}
+.container {
+  width: 80%;
+  margin-top: 0;
+}
+
+.articles {
+  color: white;
+  margin: 0 auto;
+  font-family: Sintony_bold;
+  text-transform: uppercase;
+  width: 100%;
+  height: 70px;
+  background-color: #63c6ae;
+}
+
+.aricle-item {
+  padding: 20px 50px;
+  vertical-align: middle;
+  align-items: center;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+}
+
+.article-logo a {
+  padding-top: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.gallerey {
+  background-color: #242a2c;
+}
+
+.gallerey-item img {
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .container {
+    width: 80%;
+  }
+
+  .articles {
+    background-color: #63c6ae;
+    text-align: center;
+    height: 70px;
+  }
+
+  .article-logo {
+    margin: 0 auto;
+  }
+
+  .article-logo a {
+    padding: 0;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+  }
+
+  .aricle-item {
+    padding: 10px;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .article-logo a {
+    font-size: 7vw;
   }
 }
 @font-face {
@@ -4784,10 +4962,10 @@ nav {
   unicode-range: U+0020-00FE;
 }
 @font-face {
-  font-family: "HelveticaNeue";
-  src: url("../fonts/HelveticaNeueCyr-Italic.eot");
-  src: url("../fonts/HelveticaNeueCyr-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Italic.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Italic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Italic.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Italic.svg#HelveticaNeueCyr-Italic") format("svg");
-  font-weight: 550;
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaNeueCyr-Thin.eot");
+  src: url("../fonts/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Thin.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Thin.svg#HelveticaNeueCyr-Thin") format("svg");
+  font-weight: 100;
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-00F7;
