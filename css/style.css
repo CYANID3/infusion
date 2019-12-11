@@ -4999,17 +4999,30 @@ nav {
   display: flex;
 }
 
-.carousel-text {
-  width: 90%;
-}
-
-.carousel-item {
+.owl-carousel-item {
   text-align: center;
   border: 10px solid white;
 }
 
-.carousel-item:hover {
+.human {
+  transform: translateY(-40px);
+  margin: 0 auto;
+  margin-bottom: -30px;
+  width: 110px;
+  z-index: 5;
+}
+
+.human img {
+  height: auto;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.owl-carousel-item:hover {
   border: 10px solid #63c6ae;
+}
+.owl-carousel-item:hover .human img {
+  border: 5px solid #63c6ae;
 }
 
 .carousel-img {
@@ -5018,51 +5031,69 @@ nav {
   height: auto;
 }
 
-.carousel-title {
+.owl-carousel-title {
   line-height: 30px;
   padding: 0 10%;
   text-align: center;
-  font-size: 0.6vw;
+  font-size: 0.8vw;
   font-weight: bolder;
   width: 100%;
 }
 
-.carousel-subtitle {
+.owl-carousel-subtitle {
   padding: 0 10%;
   line-height: 30px;
   width: 60%;
   text-align: center;
-  font-size: 0.8vw;
+  font-size: 0.6vw;
   font-weight: lighter;
   width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-  .carousel-subtitle {
+  .owl-carousel-subtitle {
     font-size: 1vw;
   }
 
-  .carousel-title {
+  .owl-carousel-title {
     font-size: 1vw;
   }
 }
 @media screen and (max-width: 980px) {
-  .carousel-item {
+  .owl-carousel-item {
     border: 10px solid #63c6ae;
     border-radius: 20px;
+  }
+
+  .human img {
+    border: 5px solid #63c6ae;
+  }
+
+  .carousel-img img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 }
 @media screen and (max-width: 720px) {
-  .carousel-item {
+  .owl-carousel-item {
     border: 10px solid #63c6ae;
     border-radius: 20px;
   }
 
-  .carousel-subtitle {
+  .human img {
+    border: 5px solid #63c6ae;
+  }
+
+  .carousel-img img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .owl-carousel-subtitle {
     font-size: 2.5vw;
   }
 
-  .carousel-title {
+  .owl-carousel-title {
     font-size: 2.5vw;
   }
 }
@@ -5083,13 +5114,18 @@ body {
   text-align: center;
 }
 
+.menu-list {
+  padding: 0 0;
+}
+
 .menu-item {
+  margin-left: 20px;
   padding: 10px 0;
-  width: 80%;
+  width: 70%;
   text-transform: uppercase;
   list-style-type: none;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   line-height: 40px;
   border-bottom: 1px solid black;
 }
