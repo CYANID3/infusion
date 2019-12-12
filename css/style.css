@@ -4891,7 +4891,7 @@ nav {
   align-items: center;
   margin: 0 auto;
   list-style-type: none;
-  display: flex;
+  display: block;
 }
 
 .article-logo a {
@@ -5185,8 +5185,38 @@ body {
 
   .slideout-menu {
     display: block;
+    visibility: hidden;
   }
 }
+.apple {
+  background-color: #242a2c;
+}
+
+.apple-top {
+  padding-top: 40px;
+}
+
+.owl-head {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  color: #737c85;
+  display: flex;
+}
+
+.apple-carousel-item {
+  text-align: center;
+}
+
+.carousel-img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
 @font-face {
   font-family: "Sintony_bold";
   src: url("../fonts/Sintony Bold.eot");
