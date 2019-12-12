@@ -262,6 +262,7 @@
 	<!-- CAROUSEL START -->
 <div class="apple">
 	<div class="container apple-top" data-slideout-ignore >
+
 	<div id="two-owl" class="owl-carousel row owl-head">
 	<div class="apple-carousel-item  ">
 		<div class="apple-img">
@@ -281,12 +282,78 @@
 		</div>
 	</div>
 </div>
-
-
-
-
+		</div>
+		</div>
 
 	<!-- CAROUSEL END -->
+
+
+	<!-- LAST PART START -->
+<div class="last-part">
+	<div class="container">
+	  <div class="row <!-- no-gutters -->">
+	    <div class="col-sm-12 col-md-3 last-part-list">
+	    	<ul class="lp-list">
+	    	<li class="lp-li"><a href="#">vector calculation</a></li>
+	    	<li class="lp-li"><a href="#">progress bar</a></li>
+	    	<li class="lp-li"><a href="#">browser surround</a></li>
+	    	<li class="lp-li"><a href="#">vector buttons</a></li>
+	    	<li class="lp-li"><a href="#">raiting stars</a></li>
+	    	<li class="lp-li"><a href="#">icon set</a></li>
+	    </ul>
+	    </div>
+	    <div class="col-sm-12 col-md-3  lp-img">
+	    	<img src="img/f_1.png" alt="e1">
+	    	<img src="img/f_2.png" alt="e2">
+	    </div>
+	    <div class="col-sm-12 col-md-3  lp-img">
+	    	<img src="img/f_3.png" alt="e3">
+	    	<img src="img/f_4.png" alt="e4">
+	    </div>
+	    <div class="col-sm-12 col-md-3  lp-img">
+	    	<img src="img/f_5.png" alt="e5">
+	    	<img src="img/f_6.png" alt="e6">
+	    </div>
+	  </div>
+	</div>
+</div>
+
+
+	<!-- LAST PART END -->
+
+	<!-- QUOTE START -->
+<!-- <div class="quote">
+	<div class="container quote-top" data-slideout-ignore >
+
+	<div id="three-owl" class="owl-carousel row owl-head">
+	<div class="quote-carousel-item  ">
+		<div class="quote-text">
+			<h1 class="quote-title">Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. </h1>
+			<h3 class="quote-subtitle">Nam mi enim, auctor non ultricies a</h3>
+		</div>
+	</div>
+	
+	<div class="quote-carousel-item  ">
+		<div class="quote-text">
+			<h1 class="quote-title">Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. </h1>
+			<h3 class="quote-subtitle">Nam mi enim, auctor non ultricies a</h3>
+		</div>
+	</div>
+	
+	<div class="quote-carousel-item  ">
+		<div class="quote-text">
+			<h1 class="quote-title">Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. </h1>
+			<h3 class="quote-subtitle">Nam mi enim, auctor non ultricies a</h3>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+ -->
+
+
+	<!-- QUOTE END -->
+
 
 
 </main>
@@ -352,7 +419,7 @@ document.querySelector('.js-slideout-toggle').addEventListener('click', function
     loop:true,
     margin:10,
     nav:true,
-    navText : ["",""],
+    navText : [" "," "],
     responsiveClass:true,
     responsive:{
         0:{
@@ -366,7 +433,31 @@ document.querySelector('.js-slideout-toggle').addEventListener('click', function
         1200:{
             items:1,
             nav:true,
-            loop:false
+            loop:true
+        }
+    }
+})
+</script>
+<script>
+	$('#three-owl').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    navText : [" "," "],
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        720:{
+            items:1,
+            nav:false
+        },
+        1200:{
+            items:1,
+            nav:true,
+            loop:true
         }
     }
 })

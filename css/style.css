@@ -5217,6 +5217,82 @@ body {
   height: auto;
 }
 
+.last-part {
+  padding-top: 20px;
+  background-color: #f8f8f9;
+}
+
+.container {
+  padding: 0;
+  width: 80%;
+}
+
+.last-part-list {
+  padding-top: 50px;
+}
+
+.lp-list {
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  text-align: left;
+  line-height: 30px;
+}
+
+.lp-list a {
+  text-decoration: none;
+  font-family: Lato;
+  color: #757b7d;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+.lp-li:hover a {
+  color: #b5bcc3;
+}
+
+.lp-img {
+  margin-left: -5px;
+}
+
+.lp-img img {
+  width: 90%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .lp-img {
+    margin-left: 5px;
+  }
+
+  .last-part-list {
+    padding-bottom: 50px;
+  }
+
+  .lp-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lp-list {
+    text-align: center;
+  }
+
+  .lp-li {
+    border-bottom: 2px solid #757b7d;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .lp-li:last-child {
+    border-bottom: none;
+  }
+
+  .lp-list a {
+    font-size: 1.2rem;
+    line-height: 50px;
+  }
+}
 @font-face {
   font-family: "Sintony_bold";
   src: url("../fonts/Sintony Bold.eot");
@@ -5243,6 +5319,15 @@ body {
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-00F7;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato Bold.eot");
+  src: url("../fonts/Lato Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato Bold.woff2") format("woff2"), url("../fonts/Lato Bold.woff") format("woff"), url("../fonts/Lato Bold.ttf") format("truetype"), url("../fonts/Lato Bold.svg#Lato Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
 }
 
 /*# sourceMappingURL=style.css.map */
