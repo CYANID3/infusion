@@ -369,7 +369,7 @@
 <script src="js/jquery.ui.totop.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/owl-carousel-start.js"></script>
-<script src="js/slideout.min.js"></script>
+<script src="js/slideout.js"></script>
 <script>
   var slideout = new Slideout({
     'panel': document.getElementById('panel'),
@@ -377,20 +377,20 @@
     'padding': 256,
     'tolerance': 20
   });
-slideout.on('translatestart', function() {
-  console.log('Start');
-});
+// slideout.on('translatestart', function() {
+//   console.log('Start');
+// });
 
-slideout.on('translate', function(translated) {
-  console.log('Translate: ' + translated); // 120 in px
-});
+// slideout.on('translate', function(translated) {
+//   console.log('Translate: ' + translated); // 120 in px
+// });
 
-slideout.on('translateend', function() {
-  console.log('End');
-});
-document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
-    slideout.toggle();
-});
+// slideout.on('translateend', function() {
+//   console.log('End');
+// });
+// document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+//     slideout.toggle();
+// });
 </script>
 <script>
 	$('#one-owl').owlCarousel({
@@ -421,7 +421,7 @@ document.querySelector('.js-slideout-toggle').addEventListener('click', function
     loop:true,
     margin:10,
     nav:true,
-    navText : [" "," "],
+    navText : ["◀","▶"],
     responsiveClass:true,
     responsive:{
         0:{

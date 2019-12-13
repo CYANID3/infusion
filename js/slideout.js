@@ -198,14 +198,7 @@ Slideout.prototype._initTouchEvents = function() {
     }
   });
 
-  /**
-   * Prevents touchmove event if slideout is moving
-   */
-  this._preventMove = function(eve) {
-    if (self._moved) {
-      eve.preventDefault();
-    }
-  };
+
 
   doc.addEventListener(touch.move, this._preventMove);
 
