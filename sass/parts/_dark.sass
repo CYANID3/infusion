@@ -1,0 +1,22 @@
+html[data-theme='green'] 
+    --theme-color: 110
+
+:root 
+    --color: 'hsl(var(--theme-color), 15%, 44%)'
+    --background-color: 'hsl(var(--theme-color), 30%, 10%)'
+
+.body 
+    color: var(--color)
+    background-color: var(--background-color)
+
+
+html 
+    &[data-theme-style='normal'] 
+        --color: ~'hsl(var(--theme-color), 15%, 44%)'
+        --background-color: ~'hsl(var(--theme-color), 30%, 10%)'
+    
+    &[data-theme-style='dark'] 
+        --color: ~'hsl(var(--theme-color), 70%, 31%)'
+        --background-color: ~'hsl(var(--theme-color), 3%, 3%)'
+    
+

@@ -1,0 +1,22 @@
+	$('#one-owl').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    navText : ["",""],
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        720:{
+            items:2,
+            nav:false
+        },
+        1200:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
+})
