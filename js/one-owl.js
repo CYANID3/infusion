@@ -2,6 +2,9 @@
     loop:true,
     margin:10,
     nav:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
     navText : ["",""],
     responsiveClass:true,
     responsive:{
@@ -16,7 +19,7 @@
         1200:{
             items:4,
             nav:true,
-            loop:false
+            loop:true
         }
     }
 })
