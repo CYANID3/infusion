@@ -4,16 +4,25 @@ html, body
 	width: 100%
 	height: 100%
 
+#panel
+	position: relative
+	&:before
+		content: ''
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(#000, .8)
+		opacity: 0
+		visibility: hidden
+		transition: .2s
 
 .slideout-open
-
 	#panel
-		position: relative
+	
 		&:before
-			content: ''
-			position: fixed
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
-			background: rgba(#000, .9)
+			visibility: visible
+			opacity: 1
+
+

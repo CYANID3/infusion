@@ -4624,17 +4624,25 @@ html, body {
   height: 100%;
 }
 
-.slideout-open #panel {
+#panel {
   position: relative;
 }
-.slideout-open #panel:before {
+#panel:before {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.slideout-open #panel:before {
+  visibility: visible;
+  opacity: 1;
 }
 
 .skill-container {
