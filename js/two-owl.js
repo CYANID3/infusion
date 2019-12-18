@@ -3,20 +3,22 @@
     margin:10,
     nav:true,
     navText : ["◀","▶"],
-    dots: false,
     responsiveClass:true,
     responsive:{
         0:{
             items:1,
-            nav:false
+            nav:false,
+            dots: false
         },
         980:{
             items:1,
-            nav:true
+            nav:true,
+            dots:true
         },
         1200:{
             items:1,
             nav:true,
+            dots:true,
             loop:true
         }
     }
