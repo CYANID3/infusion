@@ -4942,12 +4942,12 @@ nav {
 }
 
 .gallerey-info h1 {
-  font-size: 1vw;
+  font-size: 0.8vw;
   color: white;
 }
 
 .gallerey-info h3 {
-  font-size: 0.8vw;
+  font-size: 0.6vw;
   color: #63c6ae;
 }
 
@@ -4969,7 +4969,21 @@ nav {
 }
 @media screen and (max-width: 980px) {
   .gallerey-info {
-    display: none;
+    top: 70%;
+    opacity: 0.3;
+    visibility: visible;
+    padding: 3% 10%;
+    height: 30%;
+  }
+
+  .gallerey-info h1 {
+    font-size: 3.5vw;
+    color: white;
+  }
+
+  .gallerey-info h3 {
+    font-size: 2.5vw;
+    color: #63c6ae;
   }
 
   .container {
