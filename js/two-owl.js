@@ -8,7 +8,7 @@
         0:{
             items:1,
             nav:false,
-            dots: false
+            dots: true
         },
         980:{
             items:1,

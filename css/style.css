@@ -5265,10 +5265,6 @@ body {
   font-size: 80px;
   opacity: 0.1;
 }
-#two-owl .owl-dots {
-  display: none;
-  visibility: hidden;
-}
 #two-owl .owl-prev {
   position: absolute;
   right: 105%;
@@ -5283,8 +5279,29 @@ body {
 }
 
 .apple {
+  padding: 40px 40px;
   background-color: #242a2c;
   color: #737c85;
+}
+
+.owl-dots {
+  visibility: visible;
+  text-align: center;
+}
+
+.owl-dot {
+  opacity: 0.1;
+  margin: 0 20px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: #242a2c !important;
+  border: 2px solid white !important;
+  border-radius: 50% !important;
+}
+
+.owl-dot.active {
+  background-color: white !important;
 }
 
 .owl-head {
@@ -5309,6 +5326,19 @@ body {
 @media screen and (max-width: 768px) {
   .owl-nav {
     display: none;
+  }
+
+  .owl-dot {
+    opacity: 0.3;
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .apple {
+    padding: 30px 30px;
+    background-color: #242a2c;
+    color: #737c85;
   }
 }
 .last-part {
