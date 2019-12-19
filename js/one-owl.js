@@ -10,16 +10,19 @@
     responsive:{
         0:{
             items:1,
-            nav:false
+            nav:false,
+            dots: false
         },
         720:{
             items:2,
-            nav:false
+            nav:false,
+            dots: false
         },
         1200:{
             items:4,
             nav:true,
-            loop:true
+            loop:true,
+            dots: false
         }
     }
 })
